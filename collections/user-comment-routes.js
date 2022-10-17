@@ -20,7 +20,7 @@ class userCommentRoutes {
                 return await this.model.findAll();
             }
         } catch ( e ) {
-            console.error( `Error in reading data with the id: ${id}` );
+            console.error( `Error reading data with the id: ${id}` );
         }
     }
     async update ( id, obj ) {

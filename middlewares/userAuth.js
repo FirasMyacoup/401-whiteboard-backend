@@ -10,7 +10,7 @@ const saveUser = async ( req, res, next ) => {
             }
         } );
         if ( username ) {
-            return res.status( 409 ).send( 'this username is already being used, please try again' );
+            return res.status( 409 ).send( ' username taken,try again' );
         }
         const email = await User.findOne( {
             where: {
